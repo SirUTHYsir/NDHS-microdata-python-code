@@ -13,16 +13,16 @@ The dataset was derived from the Nigeria Demographic and Health Survey (DHS) 201
 
 This table describes the columns (variables) in the cleaned, analysis-ready dataset.
 
-| Column | Description | Data Type (Suggested) |
-| :--- | :--- | :--- |
-| **Household_id** | Unique household identifier. | String / Integer |
-| **Time** | **Age in months.** If child died = age at death; If child alive = age at survey. | Integer |
-| **Event** | **Survival status.** $1 = \text{child died}$, $0 = \text{child alive}$ (censored). | Integer (Binary) |
-| **Area** | Type of residence: $1 = \text{urban}$, $2 = \text{rural}$. | Integer (Categorical) |
-| **Wealth** | Household wealth index: $1 = \text{poorest} \dots 5 = \text{richest}$. | Integer (Ordinal) |
-| **Education** | Mother’s education level: $0 = \text{none} \dots 3 = \text{higher}$. | Integer (Ordinal) |
-| **Mother\_age** | Age of the mother at the child’s birth (in years). | Integer |
-| **Region** | Geographic region code (e.g., North Central, South West, etc.). | String / Integer |
+| Column           |                     Description                                                    | Data Type (Suggested) |
+| :--------------- | :-------------------------------------------------------------------------------   | :-------------------- |
+| **Household_id** |            Unique household identifier. | String / Integer                         |
+|     **Time**     | **Age in months.** If child died = age at death; If child alive = age at survey.   | Integer |
+|     **Event**    | **Survival status.** $1 = \text{child died}$, $0 = \text{child alive}$ (censored). | Integer (Binary) |
+|     **Area**     | Type of residence: $1 = \text{urban}$, $2 = \text{rural}$. | Integer (Categorical) |
+|    **Wealth**    | Household wealth index: $1 = \text{poorest} \dots 5 = \text{richest}$.             | Integer (Ordinal) |
+|  **Education**   | Mother’s education level: $0 = \text{none} \dots 3 = \text{higher}$.               | Integer (Ordinal) |
+| **Mother\_age**  | Age of the mother at the child’s birth (in years).                                 | Integer |
+|   **Region**     | Geographic region code (e.g., North Central, South West, etc.).                    | String / Integer |
 
 Intended Use
 This dataset is intended for:
