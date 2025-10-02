@@ -1,31 +1,33 @@
-#  Overview
+# DHS 2018 Nigeria Microdata (Cleaned & Processed)
+
+##  Overview
 This repository contains a cleaned dataset and supporting documentation for the project:
 “A Survival Analysis of Child Mortality in Rural vs Urban Areas Using National Survey Data.”
 The dataset was derived from the Nigeria Demographic and Health Survey (DHS) 2018, specifically the Children’s Recode (KR) file. It is designed to support statistical analysis, with a focus on survival outcomes (child deaths vs survival) and socio-economic determinants.
 
-#  Contents
-•	child_mortality.csv → Cleaned dataset for analysis.
-•	Supporting Documents → Data dictionary, citation, usage guide, etc.
-•	Scripts → Python pipeline used to clean and transform the raw DHS file.
+## Contents
+ **child_mortality.csv/** → Cleaned dataset for analysis.
+* **Supporting_Documents/** → Data dictionary, citation, usage guide, etc.
+* **Scripts/* → Python pipeline used to clean and transform the raw DHS file.
 
-#  Dataset Description
-# Data Dictionary
+## Dataset Description
+## Data Dictionary
 
 This table describes the columns (variables) in the cleaned, analysis-ready dataset.
 
 | Column           |                     Description                                                    | Data Type (Suggested) |
-| :--------------- | :-------------------------------------------------------------------------------   | :-------------------- |
-| **Household_id** |            Unique household identifier. | String / Integer                         |
-|     **Time**     | **Age in months.** If child died = age at death; If child alive = age at survey.   | Integer |
-|     **Event**    | **Survival status.** $1 = \text{child died}$, $0 = \text{child alive}$ (censored). | Integer (Binary) |
-|     **Area**     | Type of residence: $1 = \text{urban}$, $2 = \text{rural}$. | Integer (Categorical) |
-|    **Wealth**    | Household wealth index: $1 = \text{poorest} \dots 5 = \text{richest}$.             | Integer (Ordinal) |
-|  **Education**   | Mother’s education level: $0 = \text{none} \dots 3 = \text{higher}$.               | Integer (Ordinal) |
-| **Mother\_age**  | Age of the mother at the child’s birth (in years).                                 | Integer |
-|   **Region**     | Geographic region code (e.g., North Central, South West, etc.).                    | String / Integer |
+| --------------- | -------------------------------------------------------------------------------   | :-------------------- |
+| `Household_id` |            Unique household identifier. | String / Integer                         |
+|     `Time`     | Age in months. If child died = age at death; If child alive = age at survey.   | Integer |
+|     `Event`    | Survival status. $1 = \text{child died}$, $0 = \text{child alive}$ (censored). | Integer (Binary) |
+|     `Area`     | Type of residence: $1 = \text{urban}$, $2 = \text{rural}$. | Integer (Categorical) |
+|    `Wealth`    | Household wealth index: $1 = \text{poorest} \dots 5 = \text{richest}$.             | Integer (Ordinal) |
+|  `Education`   | Mother’s education level: $0 = \text{none} \dots 3 = \text{higher}$.               | Integer (Ordinal) |
+| `Mother\_age`  | Age of the mother at the child’s birth (in years).                                 | Integer |
+|   `Region`     | Geographic region code (e.g., North Central, South West, etc.).                    | String / Integer |
 
-Intended Use
+## Intended Use
 This dataset is intended for:
-•	Survival analysis of child mortality (Kaplan-Meier, Cox proportional hazards, etc.).
-•	Comparison of rural vs urban areas in child mortality outcomes.
-•	Impact assessment of socio-economic factors such as wealth, mother’s education, and region.
+* **Survival analysis of child mortality (Kaplan-Meier, Cox proportional hazards, etc.).**
+* **Comparison of rural vs urban areas in child mortality outcomes.**
+* **Impact assessment of socio-economic factors such as wealth, mother’s education, and region.**
