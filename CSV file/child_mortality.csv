@@ -33923,3 +33923,4 @@ household_id,time,event,area,wealth,education,mother_age,region
     1400  33  1,0.0,0,Rural,Richer,Higher,28,6
     1400  38  2,0.0,0,Rural,Richer,Secondary,21,6
     1400  45  2,0.0,1,Rural,Richest,Secondary,43,6
+
