@@ -96,10 +96,12 @@ This dictionary explains the variables included in the cleaned child mortality d
 |     event     |	Child mortality outcome	                                       |   b5    |	Recoded: 1 = Child died, 0 = Alive at survey. (Note: DHS b5 is originally 1=Alive, 0=Dead; reversed here for survival analysis consistency).              |
 
 ## Derived / Analytical Variables
-Variable	Description	DHS Source	Notes / Recoding
-neonatal	Neonatal death indicator	b7	1 = died before 1 month, 0 = otherwise.
-infant	Infant death indicator	b7	1 = died before 12 months, 0 = otherwise.
-under5	Under-five death indicator	b7	1 = died before 60 months, 0 = otherwise.
+
+|   Variable    |                	Description	                                   |   DHS Source   |             Notes/Recording                      |
+|  -----------  |  ------------------------------------------------------------  |  ------------  |  ----------------------------------------------  |
+|   Neonatal    |               Neonatal death indicator                         |       b7       |    1 = died before 1 month, 0 = otherwise.       |
+|    infant     |                  	Infant death indicator                       |       b7	      |    1 = died before 12 months, 0 = otherwise.     |
+|    under5	    |               Under-five death indicator	                     |       b7	      |    1 = died before 60 months, 0 = otherwise.     |
 
 ** `Time` = Follow-up time in months. For children who died (event = 1), time = b7 (age at death in months). For children who were alive at interview (event = 0), time = b19 (age of child in months at survey). time = 0 indicates death at birth (neonatal). Units = months.
 
